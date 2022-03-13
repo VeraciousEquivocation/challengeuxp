@@ -1,0 +1,23 @@
+.root {
+    width: auto!important;
+    height: auto;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    overflow: hidden;
+}
+.canvas {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.canvas_content {
+    width: 1440px;
+    min-height: 1301px;
+    margin: auto;
+    position: relative;
+}

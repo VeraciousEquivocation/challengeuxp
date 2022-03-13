@@ -1,0 +1,155 @@
+.root {
+    padding-top: 8px;
+    margin-left: 1px;
+    width: 1181px;
+    height: 56px;
+    .row {
+        display:flex;
+        height: 24px;
+        .icon {
+            cursor: pointer;
+            opacity: 1;
+            mix-blend-mode: normal;
+            text-align: start;
+            margin-left:13px;
+            background-image: none;
+            background-position: center center;
+            background-repeat: repeat;
+            background-size: cover;
+            border-radius: 2px;
+            border-width: 0px;
+            border-color: rgb(140, 140, 140);
+            border-style: solid;
+            padding: 0px;
+            color: rgb(55, 55, 55);
+            font-feature-settings: "liga" 0;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 28px;
+            --paragraph: 0px;
+            text-transform: none;
+            height: 24px;
+            width: 24px;
+            pointer-events: all;
+            &:hover {
+                background-color:#0000000d;
+            }
+            .img {
+                width: 14px;
+                height: 14px;
+                margin: 5px 5px 5px 5px;
+            }
+        }
+        .divider {
+            width: 1px;
+            height: 24px;
+            background-color: #dadada;
+            background-size: cover;
+            margin-left: 11px;
+            margin-right: 16px;
+        }
+        .title {
+            width: 133px;
+            height: 20px;
+            /* Material UI */
+            font-family: Lato;
+            font-size: 15px;
+            color: #777777;
+            text-decoration: none solid rgb(119, 119, 119);
+            line-height: 20px;
+            span:last-of-type {
+                font-weight: bold;
+                color: #373737;
+            }
+        }
+        .actions {
+            margin-left: auto;
+            margin-right: 20px;
+            span:first-of-type {
+                color: #5e5e5e;
+                margin-right:14px;
+            }
+            >span:first-of-type::before {
+                position: absolute;
+                margin: 0 auto;
+                top:24px;
+                content:'';
+                width: 101px;
+                height: 1px;
+                opacity: 0.3;
+                background-color: #5e5e5e;
+            }
+            >div:first-of-type {
+                display: inline-block;
+                width: 98px;
+                height: 24px;
+                border-radius: 2px;
+                background-color: #f0f0f0;
+                &:hover {
+                    cursor: pointer;
+                }
+                >div {
+                    display:flex;
+                    justify-content: center;
+                    width: 100%;
+                    font-size: 12px;
+                    color:#5e5e5e;
+                    font-weight: bold;
+                    text-decoration: none solid rgb(255, 255, 255);
+                    line-height: 21px;
+                    text-align: center;
+                }
+            }
+            &.hasChanges>div:first-of-type {
+                background-color: #006cff;
+                width: 98px;
+                >div {
+                    color: #ffffff;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .tooltipRow {
+        .toolTipArrow {
+            overflow: visible;
+            width: 11px;
+            height: 7px;
+            opacity: 1;
+            mix-blend-mode: normal;
+            transform: rotate(0deg) translate(19px, -13px) rotate(0deg);
+            pointer-events: all;
+
+        }
+        .tip {
+            opacity: 1;
+            mix-blend-mode: normal;
+            color: rgb(205, 205, 205);
+            font-size: 12px;
+            letter-spacing: 0px;
+            line-height: 16px;
+            --paragraph: 0px;
+            text-align: start;
+            text-transform: none;
+            transform: rotate(0deg) translate(9px, -19px);
+            line-height: 22px;
+            
+            text-align: center;
+            background-color: rgba(17, 17, 17, 0.9);
+            border-radius: 2px;
+            border-width: 0px;
+            border-style: solid;
+            padding: 0px;
+            height: 24px;
+            width: 115px;
+        }
+    }
+    .botBorder {
+        width: 1181px;
+        height: 1px;
+        margin-top:8px;
+        background-color: #e6e6e6;
+        background-size: cover;
+    }
+}

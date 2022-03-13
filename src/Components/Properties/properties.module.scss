@@ -1,0 +1,145 @@
+.root {
+    margin-left: 43px;
+    width: 820px;
+    height: auto;
+    .titleRow {
+        display: flex;
+        margin-bottom: 17px;
+        .title {
+            width: 114px;
+            height: 32px;
+            font-family: Lato;
+            font-size: 24px;
+            color: #373737;
+            text-decoration: none solid rgb(55, 55, 55);
+            line-height: 32px;
+        }
+        .link {
+            display:flex;
+            margin-left: 10px;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            .icon {
+                width: 7px;
+                height: 8px;
+                margin-bottom: 9px;
+            }
+            .text {
+                position: relative;
+                margin-left: 5px;
+                height: 24px;
+                font-family: Lato;
+                font-size: 14px;
+                color: #006cff;
+                text-decoration: none solid rgb(0, 108, 255);
+                line-height: 28px;
+                &::before {
+                    position: absolute;
+                    width: 111px;
+                    height: 1px;
+                    opacity: 0.3;
+                    background-color: #006cff;
+                    margin: 0 auto;
+                    top:21.4px;
+                    content:'';
+                }
+            }
+        }
+    }
+    .formRoot {
+        width: 820px;
+        height: 479px;
+        border: none;
+        border-bottom: 1px solid #e6e6e6;
+        background-size: cover;
+        .inputRow {
+            margin-left: 20px;
+            margin-top: 12px;
+            .text {
+                width: 92px;
+                height: 24px;
+                font-family: Lato;
+                font-size: 14px;
+                color: #5e5e5e;
+                text-decoration: none solid rgb(94, 94, 94);
+                line-height: 24px;
+            }
+            input {
+                width: 230px;
+                height: 24px;
+                margin-left: 21px;
+                border: none;
+                border-bottom: 1px solid #e6e6e6;
+                font-family: Lato;
+                font-size: 14px;
+                color: #5e5e5e;
+                text-decoration: none solid rgb(94, 94, 94);
+                &:focus {
+                    outline: none;
+                }
+            }
+            .selectContainer {
+                position: relative;
+                display: inline-block;
+                .select {
+                    width: 118px;
+                    height: 24px;
+                    border-bottom: 1px solid #e6e6e6;
+                    font-family: Lato;
+                    font-size: 14px;
+                    color: #5e5e5e;
+                    text-decoration: none solid rgb(94, 94, 94);
+                }
+                .icon {
+                    position:absolute;
+                    bottom: 9px;
+                    right:0px;
+                }
+            }
+            .hint {
+                height: 16px;
+                font-family: Lato;
+                font-size: 12px;
+                color: #848484;
+                text-decoration: none solid rgb(132, 132, 132);
+                line-height: 16px;
+                .learnLink {
+                    position: relative;
+                    width: 65px;
+                    height: 24px;
+                    font-family: Lato;
+                    font-size: 12px;
+                    color: #5e5e5e;
+                    text-decoration: none solid rgb(94, 94, 94);
+                    line-height: 24px;
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        top:14.8px;
+                        width: 61px;
+                        height: 1px;
+                        opacity: 0.3;
+                        background-color: #5e5e5e;
+                    }
+                }
+            }
+            >div>textarea {
+                width: 513px;
+                height: 56px;
+                padding: 3px 8px;
+                border: 1px solid #e6e6e6;
+                background-color: #ffffff;
+                font-family: Lato;
+                font-size: 14px;
+                color: #5e5e5e;
+                text-decoration: none solid rgb(94, 94, 94);
+                line-height: 16px;
+                /* Custom CSS */
+                line-height: 16px;
+                resize: none;
+                outline: none;
+            }
+        }
+    }
+}

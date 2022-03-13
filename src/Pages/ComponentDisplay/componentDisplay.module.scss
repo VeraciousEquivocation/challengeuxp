@@ -1,0 +1,81 @@
+.root {
+    box-shadow: rgb(0 0 0 / 5%) 0px 10px 50px 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-color:white;
+    .frame {
+        width: 1182px;
+        min-height: 1301px;
+        border-right: solid 1px #e6e6e6;
+        .header {
+            margin-top: 22px;
+            margin-left: 43px;
+            margin-bottom: 28px;
+            display: flex;
+            align-items: center;
+            >div:last-of-type {
+                margin-top:-2px!important;
+            }
+            &.fadeEye div:first-of-type {
+                &:hover {
+                    svg {
+                    transition: fill 0.3s ease-in-out;
+                    fill: black;
+                    }
+                }
+            }
+            .title {
+                width: 122px;
+                height: 40px;
+                font-family: Lato;
+                font-size: 36px;
+                color: #373737;
+                text-decoration: none solid rgb(55, 55, 55);
+                line-height: 40px;   
+            }
+            .visIconDiv {
+                width: 24px;
+                height: 24px;
+                border-radius: 2px;
+                background-size: cover;
+                margin-right: 5px;
+                >svg {
+                    margin:6px;
+                }
+                &:hover {
+                    background-color: #0000000d;
+                }
+            }
+            .gearIconDiv {
+                width: 24px;
+                height: 24px;
+                border-radius: 2px;
+                background-size: cover;
+                transform: rotate(0deg) translate(0px, 0px);
+                >svg {
+                    margin:5px;
+                }
+                &:hover {
+                    background-color: #0000000d;
+                }
+            }
+        }
+        .preview {
+            margin-left: 43px;
+            margin-bottom: 80px;
+            max-width: 300px;
+            .subTitle {
+                margin-bottom: 16px;
+                width: 220px;
+                height: 32px;
+                font-family: Lato;
+                font-size: 24px;
+                color: #373737;
+                text-decoration: none solid rgb(55, 55, 55);
+                line-height: 32px;
+            }
+        }
+    }
+}
